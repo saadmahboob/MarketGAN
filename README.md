@@ -19,7 +19,7 @@ Built a pipeline on Google Colab (offers a free K80 GPU for 12-hour sessions). C
 
 Using 30 company stocks based on highest market cap as we initially planned turned out to be completely unhelpful. Moved on to S&P 500 because it accounted for 80% of movement in the market. Shown below are the GAN results from the S&P 500 companies, 20 historical days, 5 days ahead predictions, 50k epochs, and various levels of percentage threshold. For predictions of simply up or down (0% threshold), we see that the GAN has decent results, though a CNN we also trained alongside it (not shown below) still came out slightly better. In terms of predicting a 10% change, the GAN does quite badly. It seems to predict most of the down movements correctly but almost none of the up. Loosening the threshold to 1%, we see that there is actually a significant change in up predictions compared to the 10% threshold. We are now predicting 14% of the true ups rather than just 1% of them, while losing very little of the accuracy in down predictions.
 
-[An Example Colab Notebook](https://github.com/kah-ve/MarketGAN/blob/master/GANResults.PNG) 
+![Results](https://github.com/kah-ve/MarketGAN/blob/master/GANResults.PNG) 
 
 #### Future Work
 
